@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Barbershop Tampa — Town 'n' Country, FL</title>
+<style>
+  :root{
+    --cream:#f7f1e3; --paper:#fffdf6; --ink:#1c1a17;
+    --red:#b3312a; --blue:#274472; --gold:#a97f2f;
+    --muted:#6f675a; --line:#e0d5bd;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--cream);color:var(--ink);
+    font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{display:block;max-width:100%}
+  .wrap{max-width:560px;margin:0 auto;background:var(--cream)}
+  .pole{height:12px;
+    background:repeating-linear-gradient(45deg,var(--red) 0 18px,#fdfbf5 18px 36px,var(--blue) 36px 54px,#fdfbf5 54px 72px);
+    border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)}
+
+  /* HERO */
+  .hero{position:relative;text-align:center}
+  .hero-img{width:100%;height:50vh;min-height:320px;object-fit:cover;object-position:center}
+  .hero::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(28,26,23,.20) 0%,rgba(28,26,23,0) 35%,rgba(247,241,227,.96) 90%,var(--cream) 100%)}
+  .hero-content{position:relative;z-index:2;margin-top:-104px;padding:0 22px}
+  .logo{width:118px;height:118px;border-radius:50%;margin:0 auto 14px;object-fit:cover;
+    border:3px solid var(--ink);box-shadow:0 10px 26px rgba(28,26,23,.3)}
+  h1{font-family:Georgia,"Times New Roman",serif;font-size:2rem;letter-spacing:.05em;
+    font-weight:700;text-transform:uppercase;color:var(--ink)}
+  .rubro{color:var(--red);letter-spacing:.3em;font-size:.78rem;font-weight:800;text-transform:uppercase;margin-top:6px}
+  .ciudad{color:var(--muted);font-size:.95rem;margin-top:8px}
+  .tagline{margin-top:14px;font-size:1.08rem;font-style:italic;font-family:Georgia,serif;color:#3d382f}
+  .cta-row{display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem}
+  .btn-main{background:var(--red);color:#fff;box-shadow:0 8px 20px rgba(179,49,42,.35)}
+  .btn-ghost{border:2px solid var(--ink);color:var(--ink);background:transparent}
+
+  /* SECTIONS */
+  section{padding:38px 22px 6px}
+  .kicker{color:var(--blue);font-size:.72rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase}
+  h2{font-family:Georgia,"Times New Roman",serif;font-size:1.5rem;margin:8px 0 6px}
+  .sub{color:var(--muted);font-size:.98rem}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:18px;
+    box-shadow:0 3px 12px rgba(28,26,23,.06)}
+  .card img{width:100%;height:210px;object-fit:cover}
+  .card .txt{padding:16px 18px 18px}
+  .card h3{font-family:Georgia,serif;font-size:1.12rem}
+  .card p{color:var(--muted);font-size:.94rem;margin-top:4px}
+  .list{margin-top:18px;display:grid;gap:10px}
+  .item{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+    display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .item b{font-size:1rem}
+  .item span{color:var(--red);font-size:.83rem;font-weight:700;text-align:right}
+  .why{background:var(--ink);color:#f3ecdb;margin-top:38px;padding:34px 22px}
+  .why .kicker{color:#e8b4b0}
+  .why h2{color:#fff}
+  .why p{color:#e9e0cb;font-size:1.02rem;margin-top:10px}
+  .why strong{color:#f0c26b}
+  .hours{background:var(--paper);border:1px solid var(--line);border-radius:14px;margin-top:18px;padding:16px 18px}
+  .hours div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line);font-size:.96rem}
+  .hours div:last-child{border-bottom:none}
+  .hours span{color:var(--muted)}
+  .big-cta{text-align:center;padding:40px 22px 8px}
+  .big-cta p{color:var(--muted);margin-bottom:16px}
+
+  /* FOOTER */
+  footer{margin-top:44px;padding:26px 22px 34px;text-align:center;color:var(--muted);font-size:.92rem}
+  footer a{color:var(--ink);text-decoration:none;font-weight:600}
+  .demo-note{margin-top:18px;font-size:.72rem;color:#a2987f;letter-spacing:.08em;text-transform:uppercase}
+  @media(min-width:640px){ h1{font-size:2.35rem} .hero-img{height:54vh} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="pole"></div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="hero-img" src="equipo.webp" alt="Inside The Barbershop Tampa with its team of barbers">
+    <div class="hero-content">
+      <img class="logo" src="logo.webp" alt="The Barbershop Tampa logo">
+      <h1>The Barbershop</h1>
+      <div class="rubro">Tampa, FL</div>
+      <div class="ciudad">Classic American Barbershop · Town &rsquo;n&rsquo; Country</div>
+      <p class="tagline">Home of the team of the best barbers in Tampa.</p>
+      <div class="cta-row">
+        <a class="btn btn-main" href="tel:+18135423799">Call to Book</a>
+        <a class="btn btn-ghost" href="#services">Services &amp; Hours</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="kicker">Services</div>
+    <h2>A Real Barbershop</h2>
+    <p class="sub">Not one barber — a whole team, in a neighborhood shop that feels like family.</p>
+
+    <div class="list">
+      <div class="item"><b>Haircuts</b><span>Team of barbers</span></div>
+      <div class="item"><b>Fades &amp; Classic Cuts</b><span>Walk-ins welcome</span></div>
+      <div class="item"><b>Beard Trims</b><span>Clean finish</span></div>
+      <div class="item"><b>Online Booking</b><span>thebarbershop813.com</span></div>
+    </div>
+
+    <div class="card">
+      <img src="padre-hijo.webp" alt="Father and son getting haircuts together">
+      <div class="txt">
+        <h3>Father &amp; Son Cuts</h3>
+        <p>Some traditions start in a barber chair. Bring your boy, sit side by side, and leave looking sharp — together.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="hero.webp" alt="Barber at work in a classic barbershop">
+      <div class="txt">
+        <h3>Book Your Chair</h3>
+        <p>This shop runs on appointments — reserve online at thebarbershop813.com or give us a call.</p>
+      </div>
+    </div>
+
+    <div class="hours">
+      <div><b>Monday – Thursday</b><span>9 AM – 6 PM</span></div>
+      <div><b>Friday</b><span>8 AM – 6 PM</span></div>
+      <div><b>Saturday</b><span>8 AM – 4 PM</span></div>
+    </div>
+  </section>
+
+  <!-- WHY -->
+  <div class="why">
+    <div class="kicker">Why Us</div>
+    <h2>The Neighborhood&rsquo;s Barbershop</h2>
+    <p>This is more than a haircut shop — it&rsquo;s <strong>community</strong>. The team raised <strong>$2,000 for a local charity raffle</strong> in under two weeks, welcomes every new barber like family, and has even cut a Tampa Bay Buccaneers player. When you sit in our chairs, you&rsquo;re one of ours.</p>
+  </div>
+
+  <!-- CTA -->
+  <div class="big-cta">
+    <p>8629 W Hillsborough Ave, Tampa, FL — Town &rsquo;n&rsquo; Country</p>
+    <a class="btn btn-main" href="tel:+18135423799">Call (813) 542-3799</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div><strong style="color:#1c1a17">The Barbershop Tampa</strong></div>
+    <div style="margin-top:6px">8629 W Hillsborough Ave · Tampa, FL</div>
+    <div style="margin-top:4px"><a href="tel:+18135423799">(813) 542-3799</a> · <a href="#">thebarbershop813.com</a></div>
+    <div style="margin-top:4px">@thebarbershop813</div>
+    <div class="demo-note">Página de demostración</div>
+  </footer>
+
+  <div class="pole"></div>
+</div>
+</body>
+</html>
