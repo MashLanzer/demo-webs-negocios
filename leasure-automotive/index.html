@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leasure Automotive — Brandon, FL</title>
+<style>:root{--bg:#0a0e12;--panel:#131a21;--fg:#edf1f5;--muted:#97a5b1;--accent:#1f7ac2;--accent2:#4aa3e2;--onaccent:#ffffff;--line:#243140}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+img{display:block;max-width:100%}
+.wrap{max-width:560px;margin:0 auto}
+.hero{position:relative;text-align:center}
+.hero-img{width:100%;height:52vh;min-height:340px;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.30),rgba(0,0,0,.05) 35%,rgba(0,0,0,.92) 88%,var(--bg))}
+.hero-content{position:relative;z-index:2;margin-top:-110px;padding:0 22px}
+h1{font-size:2rem;font-weight:800;letter-spacing:.04em}
+.rubro{color:var(--accent2);letter-spacing:.28em;font-size:.76rem;font-weight:700;text-transform:uppercase;margin-top:8px}
+.ciudad{color:var(--muted);margin-top:8px}
+.tagline{margin-top:14px;font-size:1.08rem;font-style:italic}
+.cta-row{display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none}
+.btn-main{background:var(--accent);color:var(--onaccent)}
+.btn-ghost{border:1px solid var(--line);color:var(--fg)}
+section{padding:38px 22px 6px}
+.kicker{color:var(--accent2);font-size:.72rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase}
+h2{font-size:1.45rem;margin:8px 0 6px;text-transform:uppercase}
+.sub{color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:18px}
+.card img{width:100%;height:210px;object-fit:cover}
+.card .txt{padding:16px 18px 18px}
+.card p{color:var(--muted);font-size:.94rem;margin-top:4px}
+.list{margin-top:18px;display:grid;gap:10px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;justify-content:space-between;gap:12px}
+.item span{color:var(--accent2);font-size:.85rem;font-weight:700;text-transform:uppercase;text-align:right}
+.why{margin-top:38px;padding:34px 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel)}
+.why p{margin-top:10px}
+.big-cta{text-align:center;padding:40px 22px 8px}
+.big-cta p{color:var(--muted);margin-bottom:16px}
+footer{margin-top:44px;border-top:1px solid var(--line);padding:26px 22px 34px;text-align:center;color:var(--muted);font-size:.92rem}
+footer a{color:var(--fg);text-decoration:none;font-weight:600}
+.demo-note{margin-top:18px;font-size:.72rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=1200&q=80" alt="Car engine bay">
+    <div class="hero-content">
+      <h1>Leasure Automotive</h1>
+      <div class="rubro">Auto Repair · Since 1978</div>
+      <div class="ciudad">2015 Town Center Blvd · Brandon, Florida</div>
+      <p class="tagline">Family owned auto repair in Brandon since 1978.</p>
+      <div class="cta-row">
+        <a class="btn btn-main" href="tel:+18136841553">Call the Shop</a>
+        <a class="btn btn-ghost" href="#services">See Services</a>
+      </div>
+    </div>
+  </header>
+  <section id="services">
+    <div class="kicker">Services</div>
+    <h2>Repairs Done Right</h2>
+    <p class="sub">Repairs by ASE certified technicians. Monday–Friday 8–5. Walk-ins welcome.</p>
+    <div class="list">
+      <div class="item"><b>Auto repair</b><span>ASE certified</span></div>
+      <div class="item"><b>Diagnostics</b><span>In shop</span></div>
+      <div class="item"><b>Maintenance</b><span>Scheduled</span></div>
+      <div class="item"><b>Walk-ins</b><span>Welcome</span></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=1200&q=80" alt="Mechanic working on an engine">
+      <div class="txt"><h3>Since 1978</h3><p>A family owned shop serving Brandon for over four decades. Call ahead or just walk in, Monday to Friday, 8 to 5.</p></div>
+    </div>
+  </section>
+  <div class="why">
+    <div class="kicker">Why Leasure</div>
+    <h2>Reputation built since 1978</h2>
+    <p>Nearly five decades of Brandon drivers trust this shop. This page puts your phone, hours and address in front of every driver searching for a mechanic nearby.</p>
+  </div>
+  <div class="big-cta">
+    <p>2015 Town Center Blvd · Brandon, FL 33511</p>
+    <a class="btn btn-main" href="tel:+18136841553">Call (813) 684-1553</a>
+  </div>
+  <footer>
+    <div><strong>Leasure Automotive</strong></div>
+    <div style="margin-top:6px">2015 Town Center Blvd · Brandon, FL 33511</div>
+    <div style="margin-top:4px"><a href="tel:+18136841553">(813) 684-1553</a></div>
+    <div style="margin-top:4px">@leasureautomotive</div>
+    <div class="demo-note">Demo page</div>
+  </footer>
+</div>
+</body>
+</html>
