@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Barber Co. — St. Petersburg, FL</title>
+<style>:root{--bg:#0a0c10;--panel:#141920;--fg:#eef1f5;--muted:#9aa5b1;--accent:#c8102e;--accent2:#e8576b;--onaccent:#ffffff;--line:#243140}
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+img{display:block;max-width:100%}
+.wrap{max-width:560px;margin:0 auto}
+.hero{position:relative;text-align:center}
+.hero-img{width:100%;height:52vh;min-height:340px;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.30),rgba(0,0,0,.05) 35%,rgba(0,0,0,.92) 88%,var(--bg))}
+.hero-content{position:relative;z-index:2;margin-top:-110px;padding:0 22px}
+h1{font-size:2rem;font-weight:800;letter-spacing:.04em}
+.rubro{color:var(--accent2);letter-spacing:.28em;font-size:.76rem;font-weight:700;text-transform:uppercase;margin-top:8px}
+.ciudad{color:var(--muted);margin-top:8px}
+.tagline{margin-top:14px;font-size:1.08rem;font-style:italic}
+.cta-row{display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none}
+.btn-main{background:var(--accent);color:var(--onaccent)}
+.btn-ghost{border:1px solid var(--line);color:var(--fg)}
+section{padding:38px 22px 6px}
+.kicker{color:var(--accent2);font-size:.72rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase}
+h2{font-size:1.45rem;margin:8px 0 6px;text-transform:uppercase}
+.sub{color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:18px}
+.card img{width:100%;height:210px;object-fit:cover}
+.card .txt{padding:16px 18px 18px}
+.card p{color:var(--muted);font-size:.94rem;margin-top:4px}
+.list{margin-top:18px;display:grid;gap:10px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;display:flex;justify-content:space-between;gap:12px}
+.item span{color:var(--accent2);font-size:.85rem;font-weight:700;text-transform:uppercase;text-align:right}
+.why{margin-top:38px;padding:34px 22px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel)}
+.why p{margin-top:10px}
+.big-cta{text-align:center;padding:40px 22px 8px}
+.big-cta p{color:var(--muted);margin-bottom:16px}
+footer{margin-top:44px;border-top:1px solid var(--line);padding:26px 22px 34px;text-align:center;color:var(--muted);font-size:.92rem}
+footer a{color:var(--fg);text-decoration:none;font-weight:600}
+.demo-note{margin-top:18px;font-size:.72rem;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80" alt="Barber at work">
+    <div class="hero-content">
+      <h1>Modern Barber Co.</h1>
+      <div class="rubro">Barbershop · St. Pete</div>
+      <div class="ciudad">4634 Central Ave · St. Petersburg, Florida</div>
+      <p class="tagline">Haircuts · Fades · Shaves · Good Vibes.</p>
+      <div class="cta-row">
+        <a class="btn btn-main" href="tel:+17272906003">Call the Shop</a>
+        <a class="btn btn-ghost" href="#services">See Services</a>
+      </div>
+    </div>
+  </header>
+  <section id="services">
+    <div class="kicker">Services</div>
+    <h2>Fresh Cuts on Central Ave</h2>
+    <p class="sub">Tue–Fri 9–5:30 · Sat 8–3 · Sun &amp; Mon closed. Walk in or book ahead on Vagaro.</p>
+    <div class="list">
+      <div class="item"><b>Haircuts</b><span>Cut</span></div>
+      <div class="item"><b>Fades</b><span>Fade</span></div>
+      <div class="item"><b>Shaves</b><span>Classic</span></div>
+      <div class="item"><b>Walk-ins</b><span>Welcome</span></div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=1200&q=80" alt="Barbershop interior">
+      <div class="txt"><h3>Book on Vagaro</h3><p>Pick your barber and your time online, or call (727) 290-6003. Start your weekend with a fresh cut on Central Ave.</p></div>
+    </div>
+  </section>
+  <div class="why">
+    <div class="kicker">Why Modern Barber Co.</div>
+    <h2>Central Ave, St. Pete</h2>
+    <p>Clean lines and attention to every detail, right on Central Avenue. One page with your phone, hours and booking link turns St. Pete searches for a barber into booked chairs.</p>
+  </div>
+  <div class="big-cta">
+    <p>4634 Central Ave · St. Petersburg, FL 33711</p>
+    <a class="btn btn-main" href="tel:+17272906003">Call (727) 290-6003</a>
+  </div>
+  <footer>
+    <div><strong>Modern Barber Co.</strong></div>
+    <div style="margin-top:6px">4634 Central Ave · St. Petersburg, FL 33711</div>
+    <div style="margin-top:4px"><a href="tel:+17272906003">(727) 290-6003</a></div>
+    <div style="margin-top:4px">@modernbarberco</div>
+    <div class="demo-note">Demo page</div>
+  </footer>
+</div>
+</body>
+</html>
